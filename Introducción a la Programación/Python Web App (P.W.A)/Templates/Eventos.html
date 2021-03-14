@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Crear evento</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/static/logo.png">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='EventosCrear.css')}}">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body>
+	{% block body %}
+		<div class="back">
+			<header>
+			<img src="/static/fondo2.jpg" class="fondo">
+			<img src="/static/barra.png" class="barra">
+			<img src="/static/barraLateral.png" class="barra2">
+			<img src="/static/logo.png" class="logo">
+			<form action="{{url_for('mensajes')}}" method="POST">
+				<input type="image" name="mensajes" value="mensajes" src="static/mensajes.png" class="mensajes">
+			</form>
+			<img src="/static/recuadroBlanco.jpg" class="Recuadro">
+			<form action="{{url_for('grupos')}}", method="POST">
+				<button class="crear" type="submit">Crear Grupo</button>
+			</form>
+			<form action="{{url_for('busqueda')}}" method="POST"> 
+				<input type="entry" name="GrupoBuscar" placeholder="Search a Group" class="busqueda">
+				<input type="submit" value="Buscar" class="buscar">
+			</form>
+			<form action="{{url_for('Home')}}" method="POST">
+				<input type="submit" value="Salir de la sesión" class="salirse">
+			</form>
+			</header>
+			<aside>
+				<h2 class="Activos">Grupos Activos</h2>
+				<ul class="Grupos">
+					{% if datos.grupos == datos.grupos1 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 1</a></li>
+					{% else %}
+						<li><a href="http://localhost:5000/ActiveGruop">{{datos.grupos}}</a></li>
+					{% endif %}
+					{% if datos.grupos == datos.grupos2 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 2</a></li>
+					{% else %}
+						<li>{{datos.grupos}}</li>
+					{% endif %}
+					{% if datos.grupos == datos.grupos3 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 3</a></li>
+					{% else %}
+						<li>{{datos.grupos}}</li>
+					{% endif %}
+					{% if datos.grupos == datos.grupos4 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 4</a></li>
+					{% else %}
+						<li>{{datos.grupos}}</li>
+					{% endif %}
+					{% if datos.grupos == datos.grupos5 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 5</a></li>
+					{% else %}
+						<li>{{datos.grupos}}</li>
+					{% endif %}
+					{% if datos.grupos == datos.grupos6 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 6</a></li>
+					{% else %}
+						<li>{{datos.grupos}}</li>
+					{% endif %}
+					{% if datos.grupos == datos.grupos7 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 7</a></li>
+					{% else %}
+						<li>{{datos.grupos}}</li>
+					{% endif %}
+					<li><a href="">...</a></li>
+				</ul>
+				<h2 class="Eventos">Eventos</h2>
+				<ul class="Eventos2">
+					<li>Evento 1</li>
+					<li>Evento 2</li>
+					<li>Evento 3</li>
+					<li>Evento 4</li>
+					<li>Evento 5</li>
+					<li>Evento 6</li>
+					<li>Evento 7</li>
+					<li>Evento 8</li>
+					<li><a href="">...</a></li>
+				</ul>
+				<p class="final"><cite>Sovent</cite></p>
+				<p class="final2"><cite>Network</cite></p>
+			</aside>
+			<section>
+				<article>
+					<h2 class="perfil">Bienvenido {{datos.usuario}}</h2>
+					<form action="{{url_for('crear_evento')}}" method="POST">
+						<h2 class="TEvento">Crear evento</h2>
+						<input type="entry" required name="CrearEvento" class="CrearE" placeholder="Introduce el nombre del evento">
+						<h2 class="DEvento">Descripción del Evento</h2>
+						<textarea name="CrearDescripcion" required class="CrearD" placeholder="Introduce la Descripción de tu evento"></textarea>
+						<input type="submit" value="LISTO" class="EnviarE">
+						<h2 class="DiaEvento">Día del evento</h2>
+						<form action="{{url_for('crear_evento')}}" method="POST">
+							<select class="barraEvento" name="diaE">
+								{% for semana in datos.calendario %}
+									{% for dia in semana %}
+										{% if dia == 0 %}
+											<option>No disponible</option>
+										{% else %}
+											<option>{{dia}}</option>
+										{% endif %}
+									{% endfor %}
+								{% endfor %}
+							</select>
+						</form>
+					</form>
+				</article>
+			</section>
+		</div>
+	{% endblock %}
+</body>
+</html>

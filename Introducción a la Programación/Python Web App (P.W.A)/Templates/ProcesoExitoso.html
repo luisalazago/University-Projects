@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>PROCESO EXITOSO</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body style="background-color: yellow;">
+	{% block body %}
+		<h2 style="font-family: Arial; font-weight: bold">PROCESO EXITOSO</h2>
+		<hr>
+		<p style="font-family: Arial;">En hora buena {{datos.usuario}} has solicitada estar en un grupo.</p>
+		<form action="{{url_for('principal')}}" method="POST">
+			<input type="submit" value="Regresar al menú" style="font-family: Arial; font-weight: bold; background-color: red; color: white; border: none; padding: 16px 14px; opacity: 0.9%;">
+		</form>
+	{% endblock %}
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Grupo {{nombre.grupo}}</title>
+	
+	<meta charset="utf-8">
+	<meta name="Descripción" content="En esta parte encontrará como nombrar a un grupo en Sovent Network">
+	<meta name="keywords" content="Grupos, Crear, Sovent, Network, Nombrar, Idealizar">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'CSS/grupos1.css')}}"> <!--Recuerda crear el grupo-->
+	<style type="text/css">
+	.font {
+		position: absolute;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		height: 1080px;
+		overflow: hidden;
+		background-image: url("fondo2.jpg");
+	}
+
+	body, html {
+		margin: 0;
+		padding: 0;
+	}
+
+	.barra {
+		width: 100%;
+		top: 0%;
+		left: 0%;
+		position: absolute;
+	}
+
+	.barra2 {
+		position: absolute;
+		top: -9.5%;
+		left: 0%;
+		width: 1550px;
+		height: 2000px;
+	}
+
+	.logo {
+		position: absolute;
+		top: 71%;
+		left: -6%;
+		width: 35%;
+	}
+
+	.campana {
+		position: absolute;
+		top: 0%;
+		left: 3%;
+		width: 9%;
+	}
+
+	.busqueda {
+		position: absolute;
+		top: 1%;
+		left: 32%;
+		font-family: Etchas;
+		padding: 0.7%;
+		background-color: #cdcdcd;
+		border: none;
+		color: black;
+		width: 42%;
+	}
+
+	.final {
+		position: absolute;
+		top: 92.9%;
+		left: 2.6%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: #00FF00;
+	}
+
+	.final2 {
+		position: absolute;
+		top: 92.9%;
+		left: 9.5%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: #FF4000;
+	}
+
+	.mensajes {
+		position: absolute;
+		top: 0%;
+		left: -1%;
+		width: 9%;
+	}
+
+	.Activos {
+		position: absolute;
+		top: 4%;
+		left: 1%;
+		font-size: 200%;
+		font-family: Arial;
+		font-weight: bold;
+		color: #FF4000;
+	}
+
+	.Grupos {
+		position: absolute;
+		top: 8%;
+		left: 0.5%;
+		font-size: 180%;
+		font-family: Arial;
+		font-weight: bold;
+		color:#00FF00;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.eventos {
+		position: absolute;
+		top: 35%;
+		left: 1%;
+		font-size: 200%;
+		font-weight: bold;
+		font-family: Arial;
+		color: #FF4000;
+	}
+
+	.eventos2 {
+		position: absolute;
+		top: 39%;
+		left: 0.5%;
+		font-size: 180%;
+		font-weight: bold;
+		font-family: Arial;
+		color: #00FF00;
+	}
+
+	.recuadro {
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		width: 60%;
+		height: 50%;
+	}
+
+	
+	</style>
+</head>
+<body>
+	<div class="font">
+		<header>
+			<img src="fondo2.jpg" class="fondo">
+			<img src="barra.png" class="barra">
+			<img src="barra lateral.png" class="barra2">
+			<img src="logo.png" class="logo">
+			<img src="mensajes.png" class="mensajes">
+			<img src="notificacion.png" class="campana">
+			<input type="text" name="sname" placeholder="Search a Group" class="busqueda">
+			<p class="final">Sovent</p>
+			<p class="final2">Network</p>
+		</header>
+		<aside>
+			<h2 class="Activos">Grupos Activos</h2>
+			<ul class="Grupos">
+				<li>Grupo 1</li>
+				<li>Grupo 2</li>
+				<li>Grupo 3</li>
+				<li>Grupo 4</li>
+				<li>Grupo 5</li>
+				<li>Grupo 6</li>
+				<li>Grupo 7</li>
+				<li><a href="">...</a></li>
+			</ul>
+			<h2 class="eventos">Eventos</h2>
+			<ul class="eventos2">
+				<li>Evento 1</li>
+				<li>Evento 2</li>
+				<li>Evento 3</li>
+				<li>Evento 4</li>
+				<li>Evento 5</li>
+				<li>Evento 6</li>
+				<li>Evento 7</li>
+				<li><a href="">...</a></li>
+			</ul>
+		</aside>
+		<section>
+			<article>
+				<img src="Recuadro blanco.jpg" class="recuadro">
+				<h2>Por favor elige un título para el grupo</h2>
+				<input type="text" name="cname" placeholder="Escribe un titulo para el grupo" autocomplete="on">
+			</article>
+		</section>
+	</div>
+	{{% endblock %}}
+</body>
+</html>

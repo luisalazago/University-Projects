@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>ERROR</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body style="background-color: yellow;">
+	{% block body %}
+		<h2 style="font-family: Arial; font-weight: bold;">ERROR EN LA CREACIÓN DE GRUPO!</h2>
+		<hr>
+		<p style="font-family: Arial;">{{datos.error}}</p>
+		<form action="{{url_for('grupos')}}" method="POST">
+			<input type="submit" value="Regresar a la página anterior" style="background-color: red; border: none; padding: 7px 4px; font-family: Arial; font-weight: bold; color: white;">
+		</form>
+	{% endblock %}
+</body>
+</html>

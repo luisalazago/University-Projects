@@ -1,0 +1,72 @@
+#Contenido {
+	background-image: url("blur-close-up-collage-196655.jpg");  ;
+} 
+
+time {
+	font-weight: bold;
+}
+
+footer {
+	font-weight: bold;
+}
+
+#titulo1 {
+	font-family: Chiller; 
+} 
+
+h2 {
+	font-family: Forte;
+	text-align: center;
+}
+
+#titulo2 {
+	font-family: Impact;
+	text-align: center;
+}
+
+#titulo3 {
+	font-family: Impact;
+	text-align: center;
+}
+
+p {
+	font-family: Cambria;
+	text-align: center;
+}
+
+img {
+	text-align: center;
+	width: 1000px;
+	height: 500px;
+}
+
+a {
+	text-align: center;
+}
+
+time {
+	background: orange;
+}
+
+p {
+	font-size: 25px;
+}
+
+ul {
+	font-size: 20px;
+}
+
+.subtitulos {
+	font-size: 25px;
+	font-weight: lighter;
+}
+head, body, nav, section, header, footer, img, article, aside  {
+	border: 2px solid black;
+	display: block;
+}
+
+div {
+	margin: 15px auto;
+	width: 1010px;
+}
+

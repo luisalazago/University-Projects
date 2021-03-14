@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Mensajes</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="icon" href="/static/logo.png">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'Mensajes.css')}}">
+</head>
+<body>
+	{% block body %}
+		<div class="back">
+			<header>
+				<img src="/static/FondoMensajes.jpg" class="fondo">
+				<img src="/static/barra.png" class="barra">
+				<form action="{{url_for('principal')}}" method="POST">
+					<input type="submit" value="Ir al menú" class="Menu">
+				</form>
+				<form action="{{url_for('busqueda')}}" method="POST">
+					<input type="entry" name="GrupoBuscar" placeholder="Search a Group" class="busqueda">
+					<input type="submit" value="Buscar" class="buscar">
+				</form>
+			</header>
+			<section>
+				{% if datos.autenticado %}
+					<h2 class="Mensajitos">Mensajes:</h2>
+					<ul class="MensajesMostrados">
+						{% for mensaje in datos.mensajes %}
+							<li>De: {{mensaje[0]}}. Mensaje: <cite>{{mensaje[1]}}</cite></li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+				<form action="{{url_for('ProcesarMensaje')}}" method="POST">
+					<h2 class="Emensaje">Enviar mensaje: </h2>
+					<h1 class="Para">Para:</h1>
+						<input type="entry" name="QuePersona" placeholder="Escribe el nombre el usuario destinatario" class="Persona">
+					<h1 class="MENSAJE">Mensaje: </h1>
+						<textarea type="entry" name="QueMensaje" placeholder="Esribe el mensaje" class="QueMensaje"></textarea> 
+					<input type="submit" name="boton" value="Enviar mensaje" class="EnviarM EnviarM1">
+				</form>
+			</section>
+		</div>
+	{% endblock %}
+</body>
+</html>

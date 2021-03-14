@@ -1,0 +1,315 @@
+.back {
+		position: absolute;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		height: 1080px;
+		overflow: hidden;
+		background-image: url("fondo2.jpg");
+	}
+
+	body, html {
+		margin: 0;
+		padding: 0;
+	}
+
+	.barra {
+		width: 2100px;
+		top: 0px;
+		left: 0%;
+		position: absolute;
+	}
+
+	.logo {
+		position: absolute;
+		top: 73%;
+		left: -6%;
+		width: 31%;
+	}
+
+	.barra2 {
+		position: absolute;
+		top: -6.5%;
+		left: 0%;
+		width: 1550px;
+		height: 2000px;
+	}
+
+	.campana {
+		top: 1%;
+		left: 3%;
+		width: 9%;
+		position: absolute;
+	}
+
+	.busqueda {
+		position: absolute;
+		top: 2.5%;
+		left: 32%;
+		width: 42%;
+		padding: 0.7%;
+		background-color: #cdcdcd;
+		border: none;
+		color: black;
+		font-family: Etchas;
+	}
+
+	.final {
+		position: absolute;
+		top: 92.9%;
+		left: 2.6%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: #00FF00;
+	}
+
+	.final2 {
+		position: absolute;
+		top: 93%;
+		left: 8%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: red;
+	}
+
+	.mensajes {
+		position: absolute;
+		top: 1%;
+		left: -1%;
+		width: 9%;
+	}
+
+	.Activos {
+		position: absolute;
+		top: 9%;
+		left: 1%;
+		font-size: 200%;
+		font-family: Arial;
+		font-weight: bold;
+		color: #FF4000;
+	}
+
+	.Grupos {
+		position: absolute;
+		top: 13.5%;
+		left: 0.5%;
+		font-size: 180%;
+		font-family: Arial;
+		font-weight: italic;
+		color: #00FF00;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.Eventos {
+		position: absolute;
+		top: 40%;
+		left: 1%;
+		font-size: 200%;
+		font-weight: bold;
+		font-family: Arial;
+		color: #FF4000
+	}
+
+	.Eventos2 {
+		position: absolute;
+		top: 46%;
+		left: 0.5%;
+		font-size: 180%;
+		font-weight: italic;
+		font-family: Arial;
+		color: #00FF00
+	}
+
+	.crear {
+		position: absolute;
+		top: 0.5%;
+		left: 85%;
+		border: none;
+		background-color: aqua;
+		color: black;
+		cursor: pointer;
+		width: 10%;
+		opacity: 1%;
+		padding: 14px 15px;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 150%;
+		color: purple;
+	}
+
+	.salirse {
+		position: absolute;
+		top: 2%;
+		left: 10%;
+		border: none;
+		background-color: red;
+		color: white;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 150%;
+		cursor: pointer;
+		width: 15%;
+		padding: 14px 15px;
+		opacity: 1%;
+	}
+
+	.buscar {
+		position: absolute;
+		top: 3%;
+		left: 76%;
+		color: white;
+		background-color: black;
+		border: none;
+		padding: 7px 4px;
+		font-family: Arial;
+		font-weight: bold;
+		width: 5%;
+	}
+
+	.perfil {
+		position: absolute;
+		top: 9%;
+		left: 20%;
+		font-family: Arial;
+		font-weight: bold;
+		color: black;
+		font-size: 200%;
+	}
+
+	.CrearE {
+		position: absolute;
+		border: none;
+		cursor: pointer;
+		width: 80%;
+		opacity: 0.9%;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 150%;
+		padding: 16px 15px;
+		background-color: #8A0868;
+		color: white;
+		top: 18%;
+		left: 19%;
+		transition-duration: 0.4s;
+	}
+
+	.CrearE1 {
+		background-color: #7401DF;
+	}
+
+	.CrearE1:hover {
+		background-color: #8A0868;
+	}
+
+	.PerfilG {
+		position: absolute;
+		font-family: Arial;
+		font-weight: bold;
+		color: yellow;
+		top: 9%;
+		left: 45%;
+		font-size: 200%;
+	}
+
+	.datosCalendario {
+		position: absolute;
+		top: 25%;
+		left: 19%;
+		font-family: Arial;
+		font-weight: bold;
+		color: #01DFA5;
+		font-size: 200%;
+	}
+
+	.calendario {
+		position: absolute;
+		top: 32%;
+		left: 19%;
+		height: 65%;
+		width: 80%;
+		font-family: Verdana;
+		font-weight: bold;
+		border-radius: 12px;
+	}
+
+	.recuadro {
+		position: absolute;
+		top: 31%;
+		left: 18.5%;
+		height: 67%;
+		width: 81%;
+	}
+
+	.BotonesDias {
+		width: 100%; 
+		height: 80%; 
+		border-radius: 12px; 
+		border: none; 
+		background-color: #2E2E2E; 
+		opacity: 0.9%; 
+		color: white;
+		cursor: pointer;
+		box-shadow: 0 9px #999;
+	}
+
+	.BotonesDias:hover {
+		background-color: black;
+	}
+
+	.BotonesDias:active {
+		background-color: black;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+
+	.solicitudesP {
+		position: absolute;
+		top: 10.5%;
+		left: 70%;
+		border: none;
+		color: black;
+		font-weight: bold;
+		font-family: Comic Sans MS;
+		transition-duration: 0.4s;
+		cursor: pointer; 
+		background-color: #0FF273;
+		font-size: 150%;
+		padding: 16px 25px;  
+	}
+
+	.solicitudesP1 {
+		background-color: #D3F20F;
+	}
+
+	.solicitudesP1:hover {
+		background-color: #0FF273;
+		color: black;
+	}
+
+	.EventosP {
+		position: absolute;
+		top: 24.5%;
+		left: 70%;
+		border: none;
+		background-color: #FE9A2E;
+		color: black;
+		font-family: Comic Sans MS;
+		font-weight: bold;
+		transition-duration: 0.4s;
+		cursor: pointer;
+		font-size: 130%;
+		padding: 16px 25px;
+	}
+
+	.EventosP1 {
+		background-color: #FF0000;
+	}
+
+	.EventosP1:hover {
+		background-color: #FE9A2E; 
+	}

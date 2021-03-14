@@ -1,0 +1,219 @@
+.back {
+    background-image: url("fondo(Registro).jpg"); 
+	height: 1080px;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+}
+
+body, html {
+		margin: 0;
+		padding: 0;
+	}
+
+	.barra {
+		width: 2100px;
+		top: 0px;
+		left: 0%;
+		position: absolute;
+	}
+
+	.logo {
+		position: absolute;
+		top: 72%;
+		left: -5%;
+		width: 30%;
+	}
+
+	.barra2 {
+		position: absolute;
+		top: -3.5%;
+		left: 0%;
+		width: 100%;
+		height: 150%;
+	}
+
+	.campana {
+		top: 5%;
+		left: 10%;
+		width: 9%;
+	}
+
+	.busqueda {
+		position: absolute;
+		top: 2.5%;
+		left: 32%;
+		width: 42%;
+		padding: 0.7%;
+		background-color: #cdcdcd;
+		border: none;
+		color: black;
+		font-family: Etchas;
+	}
+
+	.final {
+		position: absolute;
+		top: 92%;
+		left: 2.6%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: #00FF00;
+	}
+
+	.final2 {
+		position: absolute;
+		top: 92%;
+		left: 8%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: red;
+	}
+
+	.mensajes {
+		position: absolute;
+		top: 1%;
+		left: -1%;
+		width: 9%;
+	}
+
+	.Activos {
+		position: absolute;
+		top: 8%;
+		left: 0.5%;
+		font-size: 200%;
+		font-family: Arial;
+		font-weight: bold;
+		color: #FF4000;
+	}
+
+	.Grupos {
+		position: absolute;
+		top: 12%;
+		left: 1%;
+		font-size: 180%;
+		font-family: Arial;
+		font-weight: italic;
+		color: #00FF00;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.Eventos {
+		position: absolute;
+		top: 38%;
+		left: 0.5%;
+		font-size: 200%;
+		font-weight: bold;
+		font-family: Arial;
+		color: #FF4000
+	}
+
+	.Eventos2 {
+		position: absolute;
+		top: 42%;
+		left: 1%;
+		font-size: 180%;
+		font-weight: italic;
+		font-family: Arial;
+		color: #00FF00
+	}
+
+	.crear {
+		position: absolute;
+		top: 1%;
+		left: 85%;
+		border: none;
+		background-color: aqua;
+		color: black;
+		cursor: pointer;
+		width: 13%;
+		opacity: 1%;
+		padding: 16px 18px;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 150%;
+		color: purple;
+	}
+
+	.buscar {
+		position: absolute;
+		top: 3%;
+		left: 76%;
+		color: white;
+		background-color: black;
+		border: none;
+		padding: 7px 4px;
+		font-family: Arial;
+		font-weight: bold;
+		width: 5%;
+	}
+
+	.recuadro {
+		position: absolute;
+		top: 12%;
+		left: 21%;
+		width: 70%;
+		height: 18%;
+	}
+
+	.SUgrupo {
+		position: absolute;
+		top: 13%;
+		left: 22%;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 200%;
+	}
+
+	.seleccion {
+		position: absolute;
+		top: 22%;
+		left: 22%;
+	}
+
+	.Boton {
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		color: white;
+		font-family: Comic Sans MS;
+		font-weight: bold;
+		padding: 18px 35px;
+		margin: 4px 2px;
+		transition-duration: 0.4s;
+		cursor: pointer;
+		background-color: #DDF20F;
+		border: none;
+		width: 10%;
+	}
+
+	.Boton1 {
+		background-color: white;
+		color: black;
+		font-weight: bold;
+	}
+
+	.Boton1:hover {
+		color: black;
+		background-color:#DDF20F; 
+	}
+
+	.regresar {
+		position: absolute;
+		top: 2%;
+		left: 12%;
+		border: none;
+		padding: 16px 14px;
+		font-family: Arial;
+		font-weight: bold;
+		color: white;
+		background-color: purple;
+		opacity: 0.9%;
+		font-size: 120%;
+	}

@@ -1,0 +1,198 @@
+	.font {
+		position: absolute;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		height: 1080px;
+		overflow: hidden;
+		background-image: url("fondo2.jpg");
+	}
+
+	body, html {
+		margin: 0;
+		padding: 0;
+	}
+
+	.barra {
+		width: 100%;
+		top: 0%;
+		left: 0%;
+		position: absolute;
+	}
+
+	.barra2 {
+		position: absolute;
+		top: -9%;
+		left: 0%;
+		width: 1550px;
+		height: 2000px;
+	}
+
+	.logo {
+		position: absolute;
+		top: 71%;
+		left: -6%;
+		width: 35%;
+	}
+
+	.campana {
+		position: absolute;
+		top: 0%;
+		left: 3%;
+		width: 9%;
+	}
+
+	.busqueda {
+		position: absolute;
+		top: 1%;
+		left: 32%;
+		font-family: Etchas;
+		padding: 0.7%;
+		background-color: #cdcdcd;
+		border: none;
+		color: black;
+		width: 42%;
+	}
+
+	.final {
+		position: absolute;
+		top: 92.9%;
+		left: 2.6%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: #00FF00;
+	}
+
+	.final2 {
+		position: absolute;
+		top: 92.9%;
+		left: 9.5%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: #FF4000;
+	}
+
+	.mensajes {
+		position: absolute;
+		top: 0%;
+		left: -1%;
+		width: 9%;
+	}
+
+	.Activos {
+		position: absolute;
+		top: 5%;
+		left: 1%;
+		font-size: 200%;
+		font-family: Arial;
+		font-weight: bold;
+		color: #FF4000;
+	}
+
+	.Grupos {
+		position: absolute;
+		top: 9%;
+		left: 0.5%;
+		font-size: 180%;
+		font-family: Arial;
+		font-weight: bold;
+		color:#00FF00;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.eventos {
+		position: absolute;
+		top: 36%;
+		left: 1%;
+		font-size: 200%;
+		font-weight: bold;
+		font-family: Arial;
+		color: #FF4000;
+	}
+
+	.eventos2 {
+		position: absolute;
+		top: 40%;
+		left: 0.5%;
+		font-size: 180%;
+		font-weight: bold;
+		font-family: Arial;
+		color: #00FF00;
+	}
+
+	.recuadro {
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		width: 60%;
+		height: 45%;
+	}
+
+	.titulo23 {
+	    top: 20%;
+	    left: 31%;
+	    position: absolute;
+	    font-family: Agency FB;
+	    font-weight: bold;
+	    font-size: 200%;
+	}
+
+	.boton {
+		position: absolute;
+		top: 57%;
+		left: 53%;
+		padding: 8px 4px;
+		border: none;
+		background-color: black;
+		color: white;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 150%;
+		width: 10%;
+	}
+
+	.tituloGrupo {
+		position: absolute;
+		top: 28%;
+		left: 31%;
+		padding: 0.7%;
+		width: 50%;
+		border: 3px solid black;
+	}
+
+	.titulo24 {
+		position: absolute;
+		top: 32%;
+		left: 31%;
+		font-family: Agency FB;
+		font-weight: bold;
+		font-size: 200%;
+	}
+
+	.Descripcion {
+		position: absolute;
+		top: 40%;
+		left: 31%;
+		padding: 58px;
+		width: 39%;
+		border: 3px solid black;
+	}
+
+	.devolver {
+		position: absolute;
+		top: 1.5%;
+		left: 15%;
+		border: none;
+		background-color: purple;
+		color: white;
+		font-family: Arial;
+		font-weight: bold;
+		padding: 7px 4px;
+		width: 8%;
+
+	}

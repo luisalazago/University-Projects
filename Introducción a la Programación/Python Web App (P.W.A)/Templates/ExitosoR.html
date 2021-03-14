@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Autenticación</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body style="background: yellow;">
+	{% block body %}
+		<h2 style="color: green; font-family: Arial; font-weight: bold;">REGISTRO EXITOSO</h2>
+		<h3 style="color: black; font-family: Arial">{{datos.resultado}}</h3>
+		<hr>
+		<form action="{{url_for('Home')}}", method="POST">
+			<input type="submit" value="Regresar a la página de inicio" style="border: none; padding: 7px 4px; font-family: Arial; font-weight: bold; background-color: red;color: white;">
+		</form>
+	{% endblock %}
+</body>
+</html>

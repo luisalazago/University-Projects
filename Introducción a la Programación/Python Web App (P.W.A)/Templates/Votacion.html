@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>RESULTADO DE LA VOTACIÓN</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='Votacion.css')}}">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body>
+	{% block body %}
+		<div class="back">
+			<header>
+				<img src="/static/FondoResultado.jpg" class="fondo">
+				<img src="/static/barra.png" class="barra">
+				<form action="{{url_for('mensajes')}}" method="POST">
+					<input type="image" name="mensajes" value="mensajes" src="static/mensajes.png" class="mensajes">
+				</form>
+				<form action="{{url_for('busqueda')}}" method="POST">
+					<input type="entry" name="GrupoBuscar" placeholder="Search a group" class="busqueda">
+					<input type="submit" value="Buscar" class="Buscar">
+				</form>
+				<form action="{{url_for('principal2')}}" method="POST">
+					<input type="submit" value="Ir al menú" class="menu">
+				</form>
+			</header>
+			<section>
+				<article>
+					<form action="{{url_for('votacion1')}}" method="POST">
+						<select class="seleccion" name="EVENTO">
+							{% for opcion in datos.eventos %}
+								{% if datos.Eventos == 0 %}
+									<option>Eventos no disponibles</option>
+								{% else %}
+									<option>{{opcion}}</option>
+								{% endif %}
+							{% endfor %}
+						</select>
+						<input type="submit" name="Respuesta" value="Si" class="si SI">
+						<input type="submit" name="Respuesta" value="No" class="no NO">
+					</form>
+				</article>
+			</section>
+		</div>
+	{% endblock %}
+</body>
+</html>

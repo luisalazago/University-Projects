@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Registro SoventNetwork</title>
+	<meta charset="utf-8">
+	<meta name="Descripción" content="Está aplicación está relacionada con la organización de eventos con amigos de forma online, quí te puedes registrar.">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<meta name="Keywords" content="aplicación, eventos, calendario, amigos, online">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='Registro.css') }}">
+	<link rel="icon" href="/static/logo.png"> 
+</head>
+<body> 
+	<div class="back">
+		<div>
+			<header>
+				<img src="/static/SoventN.png" class="Sovent">
+				<img src="/static/barraFondo.png" class="barra">
+				<div class="About"><a href="">About Us</a></div>
+				<img src="/static/Separacion1.png" class="Sepa">
+				<img src="/static/recuadroBlanco.jpg" class="recuadro">
+				<div class="Help"><a href="">Help</a></div>	
+			</header>
+			<section>
+				<article>
+					<form action="{{url_for('registro')}}", method="POST">
+						<div class="contenido">
+						<ul style="list-style: none; text-align: center;">
+							<li style="color: #27dd4f;" class="nombres">Nombres</li>
+								<input type="entry" required name="NombreR" class="Names" autocomplete="on" placeholder="Enter your first names">
+							<li style="color: #27dd4f;" class="apellidos">Apellidos</li>
+							<span>
+								<input type="entry" required name="ApellidoR" class="Last" autocomplete="on" placeholder="Enter your last names" >
+							</span>
+							<li class="apodo">Nickname</li>
+							<span>
+								<input type="pas" required name="EntradaR" class="Nickname" autocomplete="on" placeholder="Enter your Username">
+							</span>
+							<li class="contaseña">Password</li>
+							<span>
+								<input type="password" required name="SalidaR" class="Password" autocomplete="on" placeholder="Enter your Password" >
+							</span>
+							<li class="like">Qué te gusta?</li>
+							<textarea required name="gusto" class="Like" placeholder="What would you like?"></textarea>
+						</ul>
+					</div>
+					<div class="Finish">
+						<button type="submit" class="boton">LISTO :D</button>
+					</div>
+				</form>
+					<div class="Derechos">Derechos Reservados 2019</div>
+					<div class="Copy">Copyright</div>
+				</article>
+			</section>
+		</div>
+	</div>
+</body> 
+</html>

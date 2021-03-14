@@ -1,0 +1,113 @@
+.back {
+	background-image: url("FondoResultado.png");
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	height: 1080px;
+	overflow: hidden;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+}
+
+.barra {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+}
+
+.mensajes {
+	position: absolute;
+	top: 0%;
+	left: -1%;
+	width: 9%;
+}
+
+.busqueda {
+	position: absolute;
+	background-color: #cdcdcd;
+	color: black;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	top: 1.5%;
+	left: 32%;
+	width: 42%;
+	padding: 0.7%;
+}
+
+.Buscar {
+	position: absolute;
+	top: 2%;
+	left: 76%;
+	color: white;
+	background-color: black;
+	border: none;
+	padding: 7px 4px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.menu {
+	position: absolute;
+	top: 1%;
+	left: 10%;
+	border: none;
+	padding: 16px 14px;
+	background-color: red;
+	opacity: 0.9%;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+	width: 15%;
+}
+
+.seleccion {
+	position: absolute;
+	top: 30%;
+	left: 45%;
+}
+
+.si {
+	position: absolute;
+	top: 35%;
+	left: 37%;
+	border: none;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	color: black;
+	background-color: #A5DF00;
+	transition-duration: 0.4s;
+	padding: 16px 14px;
+	width: 10%;
+}
+
+.SI {
+	background-color: #0080FF;
+}
+
+.SI:hover {
+	background-color: #A5DF00;
+}
+
+.no {
+	position: absolute;
+	top: 35%;
+	left: 49%;
+	border: none;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	color: black;
+	background-color: #C8FE2E;
+	transition-duration: 0.4s;
+	padding: 16px 14px;
+	width: 10%;
+}
+
+.NO {
+	background-color: #B4045F;
+}
+
+.NO:hover {
+	background-color: #C8FE2E;
+}

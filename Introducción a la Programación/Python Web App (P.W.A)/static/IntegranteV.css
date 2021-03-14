@@ -1,0 +1,155 @@
+.back {
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	height: 1080px;
+	overflow: hidden;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.barra {
+	position: absolute;
+	width: 2100px;
+	top: 0%;
+	left: 0%;
+}
+
+.campana {
+	position: absolute;
+	top: 1%;
+	left: 3%;
+	width: 9%;
+}
+
+.mensajes {
+	position: absolute;
+	top: 1%;
+	left: -1%;
+	width: 9%;
+}
+
+.busqueda {
+	position: absolute;
+	top: 3%;
+	left: 30%;
+	width: 40%;
+	border: 2px solid #cdcdcd;
+	background-color: #cdcdcd;
+	font-family: Etchas;
+	font-weight: bold;
+	color: white;
+	height: 2%;
+}
+
+.buscar {
+	position: absolute;
+	top: 3%;
+	left: 71%;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	width: 5%;
+	padding: 7px 4px;
+	border: none;
+}
+
+.Dgrupo {
+	position: absolute;
+	top: 2%;
+	left: 13%;
+	width: 13%;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+	background-color: red;
+	opacity: 0.9%;
+	cursor: pointer;
+	border: none;
+	padding: 16px 14px;
+}
+
+.Regresar {
+	position: absolute;
+	top: 2%;
+	left: 80%;
+	border: none;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+	background-color: purple;
+	opacity: 0.9%;
+	padding: 16px 14px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	width: 15%;
+}
+
+.Regresar1 {
+	background-color: green;
+}
+
+.Regresar1:hover {
+	background-color: purple;
+	opacity: 0.9%;
+}
+
+.solicitudes {
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	width: 30%;
+	height: 5%;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	background-color: aqua;
+	color: black;
+	border-radius: 5px;
+}
+
+.botonS {
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	transform: translate(-50%, -50%);
+	background-color: red;
+	color: white;
+	opacity: 0.9%;
+	padding: 16px 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 7%;
+}
+
+.botonS:hover {
+	background-color: #2EFE64;
+}
+
+.botonN {
+	position: absolute;
+	top: 30%;
+	left: 55%;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	transform: translate(-50%, -50%);
+	background-color: red;
+	opacity: 0.9%;
+	color: white;
+	padding: 16px 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 7%;
+}
+
+.botonN:hover {
+	background-color: #2EFE64;
+}

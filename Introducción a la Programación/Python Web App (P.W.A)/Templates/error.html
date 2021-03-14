@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>ERROR!</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body style="background: yellow;">
+	{% block body %}
+		<form action="{{url_for('Home')}}" method="POST">
+			<h2 style="font-family: Arial; font-weight: bold;">Error de Autenticación</h2>
+			<h3 style="font-family: Arial; color: red; font-weight: bold;">{{datos.error}}</h3>
+			<hr>
+			<input type="submit" value="Regresar a la página principal." style="border: none; padding: 7px 4px; font-family: Arial; font-weight: bold; background-color: red;color: white;">	
+		</form>
+	{% endblock %}
+</body>
+</html>

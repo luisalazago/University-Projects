@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="Descripción" content="En a cerca de nosotros podrás encontrar cual es nuestra descripción.">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<meta name="Keywords" content="About Us">
+	<link rel="icon" href="/static/logo.png">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'About.css')}}">	
+</head>
+<body>
+	{% block body %}
+	<div class="back">
+		<header>
+			<img src="/static/barraFondo.png" class="barra">
+			<a href="http://localhost:5000/">
+				<img src="/static/SoventN.png" class="Sovent">
+			</a>
+			<div class="Home"><a href="http://localhost:5000/">Home Page</a></div>
+			<img src="/static/Separacion1.png" class="Sepa">
+			<div class="Help"><a href="http://localhost:5000/Help">Help</a></div>
+		</header>
+		<section>
+			<article>
+				<img src="/static/recuadroBlanco.jpg" class="Recuadro">
+				<h1 class="Titulo1">About of the app</h1>
+				<p class="p1">SoventNetwork es una aplicación web la cual pretende ayudar a las personas a que</p>
+				<p class="p2">tengan mejor forma de organizarce respecto a los eventos que tengan para proponer</p>
+				<p class="p3">en grupo con otras personas.</p>
+				<p class="p4">En esta aplicación los usuarios podrán encontrar diferentes usos para interactuar con</p>
+				<p class="p5">las herramientas que tienen a su disposición como la creación y participación en los</p>
+				<p class="p6">grupos que deseen, la votación entre los diferentes eventos que quieran planificar en</p>
+				<p class="p7">el grupo, todos los integrantes del grupo son administradores, es decir, que todos</p>
+				<p class="p8">pueden hacer las votaciones que deseen, los mensaje que pueden dejar para que todo</p>
+				<p class="p9">el grupo los lea y vea cada vez que entren al grupo.</p>
+				<p class="p10">Por otro lado la aplicación contiene facilidad a la hora de manejarla, ya que la interfaz</p>
+				<p class="p11">es completamente alentada a todo tipo de personas que quieran usar la aplicación,</p>
+				<p class="p12">tiene como punto de refencia la utilización de barras de busqueda para que pueda</p>
+				<p class="p13">encontrar el grupo que desea para poder organizar una buena salida con un buen parche.</p>
+				<p class="p14">Es muy simple el como utilizar la aplicación y además de eso se tiene un vínculo a</p>
+				<p class="p15">continuación que podrá ayudar a los usuarios a orientarse mejor en la página dado el</p>
+				<p class="p16">caso y tratar de ayudarlos con las respuestas a las preguntas más frecuentes que hacen</p>
+				<p class="p17">los usuarios. <a href="" class="p17_1">"Help"</a></p>
+				<p class="p18">Sin más que agregar la aplicación ofece usos muy precisos a lo que necesitan los</p>
+				<p class="p19">usuarios hoy en día que es total funcionalidad con respecto a organizar sus propios</p>
+				<p class="p20">eventos, ya que los grupos en las redes sociales pierden todo el sentido al momento</p>
+				<p class="p21">de organizar algo porque siempre hay personas que comentan otro tipo de cosas o</p>
+				<p class="p22">hacen algo totalmente diferente a el propósito de la creación del grupo, con</p>
+				<p class="p23">SoventNetwork tiene funciones muy específicas para todos los grupos que sean</p>
+				<p class="p24">creados que es organizar el evento, dialogar, votar y cuadrar la salida o el evento que se</p>
+				<p class="p25">quiso.</p>
+				<footer class="pie">Autor: Luis Alberto Salazar</footer>
+			</article>
+			<article>
+				<div class="Copy">Copyright 2019</div>
+			</article>
+		</section>
+	</div>
+	{% endblock %}
+</body>
+</html>

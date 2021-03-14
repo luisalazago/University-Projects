@@ -1,0 +1,42 @@
+header, section, article, footer, nav {
+	border: 2px solid black;
+}
+
+header {
+	color: #8ec127; background: #108292;
+	font-family: Ink Free;
+}
+
+h2 {
+	font-family: decalled script;
+	font-size: 50px;
+	font-weight: lighter;
+}
+
+p {
+	font-family: Franklin Gothic Demi;
+	font-weight: lighter;
+	font-size: 40px;
+}
+
+div {
+	margin: auto;
+	width: 1010px;
+	background: #f2eaef;
+}
+
+img {
+	text-align: center;
+	width: 1000px;
+	height: 500px;
+}
+
+.for {
+	width: 500px;
+	margin: auto;
+	height: 1005px;
+}
+
+nav {
+	font-size: 30px;
+}

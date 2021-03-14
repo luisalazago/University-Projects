@@ -1,0 +1,156 @@
+.back {
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	height: 1080px;
+	overflow: hidden;
+	background-image: url("fondo2.jpg");
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.barra {
+	width: 2100px;
+	top: 0%;
+	left: 0%;
+	position: absolute;
+}
+
+.logo {
+	position: absolute;
+	top: 71%;
+	left: -5%;
+	width: 29%;
+}
+
+.barra2 {
+	position: absolute;
+	top: 0.6%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+.campana {
+	top: 1%;
+	left: 3%;
+	width: 9%;
+	position: absolute;
+}
+
+.busqueda {
+	position: absolute;
+	top: 2.5%;
+	left: 32%;
+	width: 42%;
+	padding: 0.7%;
+	background-color: #cdcdcd;
+	border: none;
+	color: black;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.busquedaBoton {
+	position: absolute;
+	top: 3%;
+	left: 77%;
+	width: 6%;
+	padding: 7px 4px;
+	border: none;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.mensajes {
+	position: absolute;
+	top: 1%;
+	left: -1%;
+	width: 9%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.Inicio {
+	position: absolute;
+	top: 2%;
+	left: 8%;
+	border: none;
+	padding: 16px 14px;
+	background-color: red;
+	opacity: 0.9%;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+	width: 15%;
+	font-size: 150%;
+}
+
+.eventos {
+	position: absolute;
+	top: 8%;
+	left: 1%;
+	font-size: 200%;
+	font-family: Arial;
+	font-weight: bold;
+	color: #FF4000;
+}
+
+.eventos2 {
+	position: absolute;
+	top: 12%;
+	left: 0.5%;
+	font-size: 180%;
+	font-family: Arial;
+	color: #00FF00;
+}
+
+.final {
+	position: absolute;
+	top: 92.9%;
+	left: 2.6%;
+	font-family: Etchas;
+	font-size: 200%;
+	font-weight: bold;
+	color: #00FF00;
+}
+
+.final2 {
+	position: absolute;
+	top: 93%;
+	left: 8%;
+	font-family: Etchas;
+	font-size: 200%;
+	font-weight: bold;
+	color: red;
+}
+
+.usuario {
+	position: absolute;
+	top: 8%;
+	left: 20%;
+	font-family: Arial;
+	font-weight: bold;
+	color: aqua;
+	opacity: 0.9%;
+	font-size: 220%;
+}
+
+.listaGrupos {
+	position: absolute;
+	top: 13%;
+	left: 20%;
+	font-family: Comic Sans MS;
+	font-weight: cursive;
+	color: white;
+	font-size: 200%;
+}
+

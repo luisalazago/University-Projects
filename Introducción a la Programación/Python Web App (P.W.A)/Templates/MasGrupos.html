@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tus Grupos</title>
+	<meta charset="utf-8">
+	<meta name="Descripción" content="Aquí encontrará todos los grupos que posea usted como usuario">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<meta name="keywords" content="Grupos, Todos, Total">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='Mgrupos.css')}}">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body>
+	{% block body %}
+		<div class="back">
+			<header>
+				<img src="/static/fondo2.jpg" class="fondo">
+				<img src="/static/barra.png" class="barra">
+				<img src="/static/barraLateral.png" class="barra2">
+				<img src="/static/logo.png" class="logo">
+				<form action="{{url_for('mensajes')}}" method="POST">
+					<input type="image" name="mensajes" value="mensajes" src="static/mensajes.png" class="mensajes">
+				</form>
+				<input type="entry" placeholder="Search a Group" class="busqueda">
+				<form action="{{url_for('busqueda')}}" method="POST">
+					<input type="submit" value="Buscar" class="busquedaBoton">
+				</form>
+				<form action="{{url_for('principal')}}" method="POST">
+					<input type="submit" value="Ir al inicio" class="Inicio">
+				</form>
+			</header>
+			<aside>
+				<h2 class="eventos">Eventos</h2>
+				<ul class="eventos2">
+					<!-- Aparición Evento 1 -->
+					{% if datos.evento == datos.eventos1 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 1</a></li>
+					{% elif datos.Eventos == 1 %}
+						<li>{{datos.evento1}}</li>
+					{% else %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 1</a></li>
+					{% endif %}
+					<!-- Aparición Evento 2 -->
+					{% if datos.evento == datos.eventos2 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 2</a></li>
+					{% elif datos.Eventos == 2 %}
+						<li>{{datos.evento2}}</li>
+					{% else %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 2</a></li>
+					{% endif %}
+					<!-- Aparición Evento 3 -->
+					{% if datos.evento == datos.eventos3 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 3</a></li>
+					{% elif datos.Eventos == 3 %}
+						<li>{{datos.evento3}}</li>
+					{% else %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 3</a></li>
+					{% endif %}
+					<!-- Aparición Evento 4 -->
+					{% if datos.evento == datos.eventos4 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 4</a></li>
+					{% elif datos.Eventos == 4 %}
+						<li>{{datos.evento4}}</li>
+					{% else %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 4</a></li>
+					{% endif %}
+					<!-- Aparición Evento 5 -->
+					{% if datos.evento == datos.eventos5 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 5</a></li>
+					{% elif datos.Eventos == 5 %}
+						<li>{{datos.evento5}}</li>
+					{% else %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 5</a></li>
+					{% endif %}
+					<!-- Aparición Evento 6 -->
+					{% if datos.evento == datos.eventos6 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 6</a></li>
+					{% elif datos.Eventos == 6 %}
+						<li>{{datos.evento6}}</li>
+					{% else %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 6</a></li>
+					{% endif %}
+					<!-- Aparición Evento 7 -->
+					{% if datos.evento == datos.eventos7 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 7</a></li>
+					{% elif datos.Eventos == 7 %}
+						<li>{{datos.evento7}}</li>
+					{% else %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 7</a></li>
+					{% endif %}
+					<!-- Aparición Evento 8 -->
+					{% if datos.evento == datos.eventos8 %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 8</a></li>
+					{% elif datos.Eventos == 8 %}
+						<li>{{datos.evento8}}</li>
+					{% else %}
+						<li><a href="http://localhost:5000/Aun_no_grupo">Evento 8</a></li>
+					{% endif %}
+					<!-- Aparición más Eventos -->
+					<li><a href="">...</a></li>
+				</ul>
+				<p class="final"><cite>Sovent</cite></p>
+				<p class="final2"><cite>Network</cite></p>
+			</aside>
+			<section>
+				<h2 class="usuario">Bienvenido: {{datos.usuario}}</h2>
+				{% if datos.Cgrupos != 0 %}
+					<ul class="listaGrupos">
+						{% for grupo in datos.grupos %}
+							{% if grupo != "" %}
+								<li><a href="http://localhost:5000/ActiveGruop" style="color: white;">{{grupo}}</a></li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				{% else %}
+					<h2 class="NoDisponible">No hay grupos disponibles</h2>
+				{% endif %}
+			</section>
+		</div>	
+	{% endblock %}
+</body>
+</html>

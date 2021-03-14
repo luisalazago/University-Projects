@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<meta name="Descripción" content="Página de inicio de SOVENT NETWORK">
+	<meta name="keywords" content="Inicio de sesión, Registro, Login">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Home.css') }}">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body>
+	{% block body %}
+	<div class="back">
+		<div>
+			<!-- Cuerpo del contenido -->
+			<header>
+				<!--<img src="fondo.jpg" class="fondo">-->
+				<img src="/static/barraFondo.png" class="barra">
+				<img src="/static/SoventN.png" class="Sovent">
+				<form action="{{url_for('about')}}" method="POST">
+					<div class="About"><a href="http://localhost:5000/About">About Us</a></div>
+				</form>
+				<img src="/static/Separacion1.png" class="Sepa">
+				<div class="Help"><a href="http://localhost:5000/Help">Help</a></div>
+			</header>
+			<section>
+				<article>
+					<img src="/static/recuadroBlanco.jpg" class="Recuadro">
+					<ul class="lista">
+						<form action="{{url_for('login')}}" method="POST">
+							<li class="Login">Login</li>
+							<li class="Username">Username</li>
+								<input type="entry" name="EntradaL" class="User" autocomplete="on" placeholder="Enter your Username">
+							<!--<img src="Separacion2.png" class="Sepa2"> -->
+							<li class="Password">Password</li>
+								<input type="password" name="SalidaL" class="contra" autocomplete="on" placeholder="Enter your Password">
+							<li class="anuncio">You don't have an account? don't worry, create a new account</li>
+							<li class="anuncio2">with the next link :D, <a href="http://localhost:5000/Register" style="color: green;">Register here.</a></li>
+							
+					</ul>
+							<button class="boton boton1" type="submit">Login</button>
+					</form>
+				</article>
+				<article>
+					<div class="Copy">Copyright 2019</div>
+				</article>
+			</section>
+		</div>
+	</div>
+	{% endblock %}
+</body>
+</html>

@@ -1,0 +1,90 @@
+		.back {
+			background-image: url("about_bg.JPG"); /* Cambiar imagen de fondo */
+			height: 1080px;
+			background-position: center;
+			background-size: cover;
+			overflow: hidden;
+			position: absolute;
+			width: 100%;
+		}
+
+		body, html {
+			margin: 0;
+			padding: 0;
+		}
+
+		.barra {
+			width: 2100px;
+			top: 0px;
+			left: 0%;
+			position: absolute;
+		}
+
+		.Sovent {
+			position: absolute;
+			top: -9%;
+			left: 35%;
+			width: 500px;
+		}
+
+		.home {
+			top: 2%;
+			left: 75%;
+			font-size: 230%;
+			font-family: Arial;
+			font-weight: bold;
+			position: absolute;
+			color: black;
+		}
+
+		.sepa {
+			position: absolute;
+			top: 1.5%;
+			left: 86%;
+			width: 90px;
+		}
+
+		.About {
+			position: absolute;
+			top: 0%;
+			left: 90%;
+			font-family: Arial;
+			font-weight: bold;
+			font-size: 220%;
+			color: black;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		article {
+			margin: 3%;
+			margin-top: 15%;
+			display: block;
+			position: absolute;
+			font-size: 150%;
+			text-align: justify;
+		}
+
+		.Recuadro {
+			position: absolute;
+			width: 97%;
+			top: 15%;
+			left: 2%;
+			height: 80%;
+		}
+
+		.Titulo1 {
+			position: absolute;
+			top: 13%;
+			left: 3%;
+			font-size: 45px;
+			font-family: Agency FB;
+		}
+
+		
+
+		
+

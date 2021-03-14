@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="Descripción" content="En a cerca de nosotros podrás encontrar cual es nuestra descripción.">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<meta name="Keywords" content="About Us">
+	<style type="text/css">
+		.back {
+			background-image: url("about_bg.JPG"); /* Cambiar este fondo */
+			height: 1080px;
+			background-position: center;
+			background-size: cover;
+			overflow: hidden;
+			position: absolute;
+			width: 100%;
+		}
+
+		body, html {
+			margin: 0;
+			padding: 0;
+		}
+
+		.barra {
+			width: 2100px;
+			top: 0px;
+			left: 0%;
+			position: absolute;
+		}
+
+		.Copy {
+			position: absolute;
+			top: 93%;
+			left: 43%;
+			font-size: 50px;
+			font-family: Etchas;
+			font-weight: bold;
+			color: #cdcdcd;
+		}
+
+		.Sovent {
+			top: -9.5%;
+			left: 35.5%;
+			position: absolute;
+			width: 500px;
+		}
+
+		.Home {
+			top: 1.5%;
+			left: 78%;
+			font-size: 30px;
+			font-family: Road Rage;
+			position: absolute;
+			color: black;
+		}
+
+		.Sepa {
+			position: absolute;
+			top: 1.5%;
+			left: 88%;
+			width: 90px;
+		}
+
+		.Help {
+			position: absolute;
+			top: 1.5%;
+			left: 93%;
+			font-size: 30px;
+			font-family: Road Rage;
+			color: black;
+		}
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.Recuadro {
+			position: absolute;
+			width: 830px;
+			height: 860px;
+			top: 13%;
+			left: 25%;
+		}
+
+		.Titulo1 {
+			position: absolute;
+			top: 11%;
+			left: 26%;
+			font-size: 45px;
+			font-family: Agency FB;
+		}
+
+		.p1 {
+			position: absolute;
+			top: 19%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			margin: 25px auto;
+			text-align: justify;
+		}
+
+		.p2 {
+			position: absolute;
+			top: 21.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			margin: 25px auto;
+			text-align: justify;
+		}
+
+		.p3 {
+			position: absolute;
+			top: 24%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			margin: 25px auto;
+			text-align: justify;			
+		}
+
+		.p4 {
+			position: absolute;
+			top: 28.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			margin: 25px auto;
+			text-align: justify;	
+		}
+
+		.p5 {
+			position: absolute;
+			top: 31%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+		}
+
+		.p6 {
+			position: absolute;
+			top: 33.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;	
+		}
+
+		.p7 {
+			position: absolute;
+			top: 36%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;	
+		}
+
+		.p8 {
+			position: absolute;
+			top: 38.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;	
+		}
+
+		.p9 {
+			position: absolute;
+			top: 41%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;	
+		}
+
+		.p10 {
+			position: absolute;
+			top: 45.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+		}
+
+		.p11 {
+			position: absolute;
+			top: 48%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+		}
+
+		.p12 {
+			position: absolute;
+			top: 50.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+		}
+
+		.p13 {
+			position: absolute;
+			top: 53%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+		}
+
+		.p14 {
+			position: absolute;
+			top: 55.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+		}
+
+		.p15 {
+			position: absolute;
+			top: 58%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+		}
+
+		.p16 {
+			position: absolute;
+			top: 60.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+		}
+
+		.p17 {
+			position: absolute;
+			top: 63%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.p17_1 {
+			color: green;
+			font-style: unset;
+		}
+
+		.p18 {
+			position: absolute;
+			top: 67%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.p19 {
+			position: absolute;
+			top: 69.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.p20 {
+			position: absolute;
+			top: 72%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.p21 {
+			position: absolute;
+			top: 74.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.p22 {
+			position: absolute;
+			top: 77%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.p23 {
+			position: absolute;
+			top: 79.5%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.p24 {
+			position: absolute;
+			top: 82%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.p25 {
+			position: absolute;
+			top: 84%;
+			left: 26%;
+			font-size: 23px;
+			font-family: Times New Roman;
+			text-align: justify;
+			margin: 25px auto;
+			font-style: unset;
+		}
+
+		.pie {
+			position: absolute;
+			top: 90%;
+			left: 26%;
+			font-size: 20px;
+			font-family: Arial;
+			text-align: left;
+			font-style: italic;
+			font-weight: bold;
+		}
+	</style>	
+</head>
+<body>
+	<div class="back">
+		<header>
+			<img src="about_bg.JPG" class="fondo">
+			<img src="barra de fondo.png" class="barra">
+			<a href="file:///E:/Python%20Web%20App%20(P.W.A)/Templates/Home%20Page.html">
+				<img src="SoventN.png" class="Sovent">
+			</a>
+			<div class="Home"><a href="file:///E:/Python%20Web%20App%20(P.W.A)/Templates/Home%20Page.html">Home Page</a></div>
+			<img src="Separacion1.png" class="Sepa">
+			<div class="Help"><a href="">Help</a></div>
+		</header>
+		<section>
+			<article>
+				<img src="Recuadro blanco.jpg" class="Recuadro">
+				<h1 class="Titulo1">About of the app</h1>
+				<p class="p1">SoventNetwork es una aplicación web la cual pretende ayudar a las personas a que</p>
+				<p class="p2">tengan mejor forma de organizarce respecto a los eventos que tengan para proponer</p>
+				<p class="p3">en grupo con otras personas.</p>
+				<p class="p4">En esta aplicación los usuarios podrán encontrar diferentes usos para interactuar con</p>
+				<p class="p5">las herramientas que tienen a su disposición como la creación y participación en los</p>
+				<p class="p6">grupos que deseen, la votación entre los diferentes eventos que quieran planificar en</p>
+				<p class="p7">el grupo, todos los integrantes del grupo son administradores, es decir, que todos</p>
+				<p class="p8">pueden hacer las votaciones que deseen, los mensaje que pueden dejar para que todo</p>
+				<p class="p9">el grupo los lea y vea cada vez que entren al grupo.</p>
+				<p class="p10">Por otro lado la aplicación contiene facilidad a la hora de manejarla, ya que la interfaz</p>
+				<p class="p11">es completamente alentada a todo tipo de personas que quieran usar la aplicación,</p>
+				<p class="p12">tiene como punto de refencia la utilización de barras de busqueda para que pueda</p>
+				<p class="p13">encontrar el grupo que desea para poder organizar una buena salida con un buen parche.</p>
+				<p class="p14">Es muy simple el como utilizar la aplicación y además de eso se tiene un vínculo a</p>
+				<p class="p15">continuación que podrá ayudar a los usuarios a orientarse mejor en la página dado el</p>
+				<p class="p16">caso y tratar de ayudarlos con las respuestas a las preguntas más frecuentes que hacen</p>
+				<p class="p17">los usuarios. <a href="" class="p17_1">"Help"</a></p>
+				<p class="p18">Sin más que agregar la aplicación ofece usos muy precisos a lo que necesitan los</p>
+				<p class="p19">usuarios hoy en día que es total funcionalidad con respecto a organizar sus propios</p>
+				<p class="p20">eventos, ya que los grupos en las redes sociales pierden todo el sentido al momento</p>
+				<p class="p21">de organizar algo porque siempre hay personas que comentan otro tipo de cosas o</p>
+				<p class="p22">hacen algo totalmente diferente a el propósito de la creación del grupo, con</p>
+				<p class="p23">SoventNetwork tiene funciones muy específicas para todos los grupos que sean</p>
+				<p class="p24">creados que es organizar el evento, dialogar, votar y cuadrar la salida o el evento que se</p>
+				<p class="p25">quiso.</p>
+				<footer class="pie">Autor: Luis Alberto Salazar</footer>
+			</article>
+			<article>
+				<div class="Copy">Copyright 2019</div>
+			</article>
+		</section>
+	</div>
+</body>
+</html>

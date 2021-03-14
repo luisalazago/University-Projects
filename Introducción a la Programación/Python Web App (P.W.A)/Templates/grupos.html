@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% block body %}
+	<title>Grupo {{datos.nombre}}</title>
+	<meta charset="utf-8">
+	<meta name="Descripción" content="En esta parte encontrará como nombrar a un grupo en Sovent Network">
+	<meta name="keywords" content="Grupos, Crear, Sovent, Network, Nombrar, Idealizar">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'Grupos.css')}}">
+	<link rel="icon" href="/static/logo.png"> 
+</head>
+<body>
+	<div class="font">
+		<header>
+			<img src="/static/fondo2.jpg" class="fondo">
+			<img src="/static/barra.png" class="barra">
+			<img src="/static/barraLateral.png" class="barra2">
+			<img src="/static/logo.png" class="logo">
+			<form action="{{url_for('mensajes')}}" method="POST">
+				<input type="image" name="mensajes" value="mensajes" src="static/mensajes.png" class="mensajes">
+			</form>
+			<input type="text" name="sname" placeholder="Search a Group" class="busqueda">
+			<p class="final">Sovent</p>
+			<p class="final2">Network</p>
+			<form action="{{url_for('principal')}}" method="POST">
+				<input type="submit" value="Ir al menú" class="devolver">
+			</form>
+		</header>
+		<aside>
+			<h2 class="Activos">Grupos Activos</h2>
+			<ul class="Grupos">
+				<li>Grupo 1</li>
+				<li>Grupo 2</li>
+				<li>Grupo 3</li>
+				<li>Grupo 4</li>
+				<li>Grupo 5</li>
+				<li>Grupo 6</li>
+				<li>Grupo 7</li>
+				<li><a href="">...</a></li>
+			</ul>
+			<h2 class="eventos">Eventos</h2>
+			<ul class="eventos2">
+				<li>Evento 1</li>
+				<li>Evento 2</li>
+				<li>Evento 3</li>
+				<li>Evento 4</li>
+				<li>Evento 5</li>
+				<li>Evento 6</li>
+				<li>Evento 7</li>
+				<li><a href="">...</a></li>
+			</ul>
+		</aside>
+		<section>
+			<article>
+				<form action="{{url_for('añadir_grupo')}}" method="POST"> 
+					<img src="/static/recuadroBlanco.jpg" class="recuadro">
+					<h2 class="titulo23">Por favor elige un título para el grupo</h2>
+					<input type="entry" name="Grupo" placeholder="Escribe un título" autocomplete="on" class="tituloGrupo">
+					<h2 class="titulo24">Descripción de su grupo</h2>
+					<textarea name="Descripcion" placeholder="Describe tu grupo" autocomplete="on" class="Descripcion"></textarea>
+					<input type="submit" value="LISTO :D" autocomplete="on" class="boton">
+				</form>
+			</article>
+		</section>
+	</div>
+	{% endblock %}
+</body>
+</html>

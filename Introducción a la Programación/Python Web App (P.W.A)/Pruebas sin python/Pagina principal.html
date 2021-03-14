@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Principal Page</title>
+	<meta charset="utf-8">
+	<meta name="Descripción" content="Aquí encontrará la aplicación principal, es decir, todo lo que tiene que ver con el principal propósito de la aplicación.">
+	<meta name="Keywords" content="Aplicación, Principal, Grupos, Mensajes, Votación, Eventos.">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='CSS/paginaPrincipal.css') }}">
+	<style type="text/css">
+	.back {
+		position: absolute;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		height: 1080px;
+		overflow: hidden;
+		background-image: url("fondo2.jpg");
+	}
+
+	body, html {
+		margin: 0;
+		padding: 0;
+	}
+
+	.barra {
+		width: 2100px;
+		top: 0px;
+		left: 0%;
+		position: absolute;
+	}
+
+	.logo {
+		position: absolute;
+		top: 71%;
+		left: -6%;
+		width: 29%;
+	}
+
+	.barra2 {
+		position: absolute;
+		top: -6.5%;
+		left: 0%;
+		width: 1550px;
+		height: 2000px;
+	}
+
+	.campana {
+		top: 1%;
+		left: 3%;
+		width: 9%;
+	}
+
+	.busqueda {
+		position: absolute;
+		top: 2.5%;
+		left: 32%;
+		width: 42%;
+		padding: 0.7%;
+		background-color: #cdcdcd;
+		border: none;
+		color: black;
+		font-family: Etchas;
+	}
+
+	.final {
+		position: absolute;
+		top: 92.9%;
+		left: 2.6%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: #00FF00;
+	}
+
+	.final2 {
+		position: absolute;
+		top: 93%;
+		left: 8%;
+		font-family: Etchas;
+		font-size: 200%;
+		font-weight: bold;
+		color: red;
+	}
+
+	.mensajes {
+		position: absolute;
+		top: 1%;
+		left: -1%;
+		width: 9%;
+	}
+
+	.Activos {
+		position: absolute;
+		top: 8%;
+		left: 1%;
+		font-size: 200%;
+		font-family: Arial;
+		font-weight: bold;
+		color: #FF4000;
+	}
+
+	.Grupos {
+		position: absolute;
+		top: 12%;
+		left: 0.5%;
+		font-size: 180%;
+		font-family: Arial;
+		font-weight: italic;
+		color: #00FF00;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.Eventos {
+		position: absolute;
+		top: 37%;
+		left: 1%;
+		font-size: 200%;
+		font-weight: bold;
+		font-family: Arial;
+		color: #FF4000
+	}
+
+	.Eventos2 {
+		position: absolute;
+		top: 41%;
+		left: 0.5%;
+		font-size: 180%;
+		font-weight: italic;
+		font-family: Arial;
+		color: #00FF00
+	}
+
+	.crear {
+		position: absolute;
+		top: 2%;
+		left: 85%;
+		border: none;
+		background-color: aqua;
+		color: black;
+		cursor: pointer;
+		width: 10%;
+		opacity: 1%;
+		padding: 16px 20px;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 150%;
+		color: purple;
+	}
+	</style>
+</head>
+<body>
+	<div class="back">
+		<header>
+			<img src="fondo2.jpg" class="fondo">
+			<img src="barra.png" class="barra">
+			<img src="barra lateral.png" class="barra2">
+			<img src="logo.png" class="logo">
+			<img src="mensajes.png" class="mensajes">
+			<input class="notificar" type="submit">
+				<img src="notificacion.png" class="campana">
+			</input>
+			<input type="text" name="uname" placeholder="Search a Group" class="busqueda">
+			<button class="crear" type="submit"><a href="file:///E:/Python%20Web%20App%20(P.W.A)/Templates/grupos.html">Crear Grupo</a></button>
+		</header>
+		<aside>
+			<h2 class="Activos">Grupos Activos</h2>
+			<ul class="Grupos">
+				<li>Grupo 1</li>
+				<li>Grupo 2</li>
+				<li>Grupo 3</li>
+				<li>Grupo 4</li>
+				<li>Grupo 5</li>
+				<li>Grupo 6</li>
+				<li>Grupo 7</li>
+				<li><a href="">...</a></li>
+			</ul>
+			<h2 class="Eventos">Eventos</h2>
+			<ul class="Eventos2">
+				<li>Evento 1</li>
+				<li>Evento 2</li>
+				<li>Evento 3</li>
+				<li>Evento 4</li>
+				<li>Evento 5</li>
+				<li>Evento 6</li>
+				<li>Evento 7</li>
+				<li>Evento 8</li>
+				<li><a href="">...</a></li>
+			</ul>
+			<p class="final"><cite>Sovent</cite></p>
+			<p class="final2"><cite>Network</cite></p>
+		</aside>
+	</div>
+</body>
+</html>

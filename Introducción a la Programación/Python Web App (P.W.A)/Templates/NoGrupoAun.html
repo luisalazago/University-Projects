@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Aún no tienes un grupo? D:</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body style="background-color: orange;">
+	{% block body %}
+		<h2 style="font-family: Arial; font-weight: bold;
+		color: black;">Aún no tienes un grupo {{datos.usuario}}??</h2>
+		<hr>
+		<p style="font-family: Arial;">Entonces crea uno, dale click al botón de abajo para ir a crear uno ;)</p>
+		<form action="{{url_for('grupos')}}" method="POST">
+			<input type="submit" value="Ir a crear grupo" style="background-color: red; color: white; font-family: Arial; font-weight: bold; border: none; padding: 7px 4px;">
+		</form>
+	{% endblock %}
+</body>
+</html>

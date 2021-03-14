@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>ERROR</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body style="background-color: yellow;">
+	{% block body %}
+		<h2 style="font-family: Arial; font-weight: bold;">ERROR!</h2>
+		<hr>
+		<p style="font-family: Arial;">{{datos.error}}</p>
+		<form action="{{url_for('evento')}}" method="POST">
+			<input type="submit" value="Ir a crear eventos" style="font-family: Arial; color: white; font-weight: bold; border: none; padding: 15px 14px; background-color: red; ">
+		</form>	
+	{% endblock %}
+</body>
+</html>

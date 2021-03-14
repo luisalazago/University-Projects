@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tus Grupos</title>
+	<meta charset="utf-8">
+	<meta name="Descripción" content="Aquí encontrará todos los grupos que posea usted como usuario">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<meta name="keywords" content="Grupos, Todos, Total">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='Mgrupos.css')}}">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body>
+	{% block body %}
+		<div class="back">
+			<header>
+				<img src="/static/fondo2.jpg" class="fondo">
+				<img src="/static/barra.png" class="barra">
+				<img src="/static/barraLateral.png" class="barra2">
+				<img src="/static/logo.png" class="logo">
+				<img src="/static/mensajes.png" class="mensajes">
+				<img src="/static/notificacion.png" class="campana">
+				<input type="entry" placeholder="Search a Group" class="busqueda">
+				<form action="{{url_for('busqueda')}}" method="POST">
+					<input type="submit" value="Buscar" class="busquedaBoton">
+				</form>
+			</header>
+			<aside>
+				<h2 class="eventos">Eventos</h2>
+				<ul class="eventos2">
+					<li>Evento 1</li>
+					<li>Evento 2</li>
+					<li>Evento 3</li>
+					<li>Evento 4</li>
+					<li>Evento 5</li>
+					<li>Evento 6</li>
+					<li>Evento 7</li>
+					<li>Evento 8</li>
+					<li><a href="">...</a></li>
+				</ul>
+			</aside>
+		</div>	
+	{% endblock %}
+</body>
+</html>

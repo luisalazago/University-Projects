@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>VOTACIÓN</title>
+	<meta charset="utf-8">
+	<meta name="Autor" content="Luis Alberto Salazar">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='IntegranteV.css')}}">
+	<link rel="icon" href="/static/logo.png">
+</head>
+<body>
+	{% block body %}
+		<div class="back">
+			<header>
+				<img src="/static/fondo(Registro).jpg" class="fondo">
+				<img src="/static/barra.png" class="barra">
+				<form action="{{url_for('mensajes')}}" method="POST">
+					<input type="image" name="mensajes" value="mensajes" src="static/mensajes.png" class="mensajes">
+				</form>
+				<form action="{{url_for('busqueda')}}" method="POST">
+					<input type="entry" name="GrupoBuscar" placeholder="Search a group" class="busqueda">
+					<input type="submit" value="Buscar" class="buscar">
+				</form>
+				<form action="{{url_for('grupo_activo')}}" method="POST">
+					<input type="submit" value="Regresar al grupo" class="Dgrupo">
+				</form>
+				<form action="{{url_for('principal')}}" method="POST">
+					<input type="submit" value="Regresar al menú" class="Regresar Regresar1">
+				</form>
+			</header>
+			<section>
+				<h2>ELIGE UNA SOLICITUD</h2>
+				<form action="{{url_for('decision', dato1=datos.Solicitud[0], dato2=datos.Solicitud[1])}}" method="POST">
+					<select class="solicitudes" name="novato">
+						{% for Soli in datos.Solicitud %}
+							{% if datos.solicitud == 0 %}
+								<option>No disponible</option>
+							{% else %}
+								<option>{{Soli}}</option>
+							{% endif %}
+						{% endfor %}
+					</select>
+					<input type="submit" value="si" name="Desicion" class="botonS">
+					<input type="submit" value="no" name="Desicion" class="botonN">
+				</form>
+			</section>
+		</div>
+	{% endblock %}
+</body>
+</html>

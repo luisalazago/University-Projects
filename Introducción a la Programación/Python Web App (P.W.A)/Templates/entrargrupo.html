@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% block body %}
+		<title>Entrar al grupo {{datos.grupoA}}</title> <!-- Completa lo de Python -->
+		<meta charset="utf-8">
+		<meta name="Autor" content="Luis Alberto Salazar">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='EntrarG.css')}}">
+		<link rel="icon" href="/static/logo.png">
+</head>
+<body>
+	<div class="back">
+		<header>
+			<img src="/static/barra.png" class="barra">
+			<img src="/static/barraLateral.png" class="barra2">
+			<img src="/static/logo.png" class="logo">
+			<form action="{{url_for('mensajes')}}" method="POST">
+				<input type="image" name="mensajes" value="mensajes" src="static/mensajes.png" class="mensajes">
+			</form>
+			<input type="entry" name="uname" placeholder="Search a Group" class="busqueda">
+			<form action="{{url_for('grupos')}}" method="POST">
+				<input type="submit" value="Crear Grupo" class="crear">
+			</form>
+			<form action="{{url_for('busqueda')}}" method="POST">
+				<input type="entry" name="GrupoBuscar" placeholder="Search a Group" class="busqueda">
+				<input type="submit" value="Buscar" class="buscar">
+			</form>
+			<form action="{{url_for('principal')}}">
+				<input type="submit" value="Regresar al menú" class="regresar">
+			</form>
+		</header>
+		<aside>
+			<h2 class="Activos">Grupos Activos</h2>
+			<ul class="Grupos">
+				{% if datos.grupos == datos.grupos1 %}
+					<li>{{datos.grupos}}</li>
+				{% else %}
+					<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 1</a></li>
+				{% endif %}
+				{% if datos.grupos == datos.grupos2 %}
+					<li>{{datos.grupos}}</li>
+				{% else %}
+					<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 2</a></li>
+				{% endif %}
+				{% if datos.grupos == datos.grupos3 %}
+					<li>{{datos.grupos}}</li>
+				{% else %}
+					<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 3</a></li>
+				{% endif %}
+				{% if datos.grupos == datos.grupos4 %}
+					<li>{{datos.grupos}}</li>
+				{% else %}
+					<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 4</a></li>
+				{% endif %}
+				{% if datos.grupos == datos.grupos5 %}
+					<li>{{datos.grupos}}</li>
+				{% else %}
+					<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 5</a></li>
+				{% endif %}
+				{% if datos.grupos == datos.grupos6 %}
+					<li>{{datos.grupos}}</li>
+				{% else %}
+					<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 6</a></li>
+				{% endif %}
+				{% if datos.grupos == datos.grupos7 %}
+					<li>{{datos.grupos}}</li>
+				{% else %}
+					<li><a href="http://localhost:5000/Aun_no_grupo">Grupo 7</a></li>
+				{% endif %}
+				<li><a href="">...</a></li>
+			</ul>
+			<h2 class="Eventos">Eventos</h2>
+			<ul class="Eventos2">
+				<li>Evento 1</li>
+				<li>Evento 2</li>
+				<li>Evento 3</li>
+				<li>Evento 4</li>
+				<li>Evento 5</li>
+				<li>Evento 6</li>
+				<li>Evento 7</li>
+				<li>Evento 8</li>
+				<li><a href="">...</a></li>
+			</ul>
+			<p class="final"><cite>Sovent</cite></p>
+			<p class="final2"><cite>Network</cite></p>
+		</aside>
+		<section>
+			<article>
+				<img src="/static/recuadroBlanco.jpg" class="recuadro">
+				<h2 class="SUgrupo">Selecciona un grupo: </h2>
+				<form action="{{url_for('Solicitud')}}" method="POST">
+					<select class="seleccion" name="grupoA">
+						{% for ApareceGrupos in datos.gruposAparecer %}
+							{% if datos.gruposAparecer != 0 %}
+								<option>{{ApareceGrupos}}</option>
+							{% else %}
+								<option>No disponible</option>
+							{% endif %}
+						{% endfor %}
+					</select>
+					<input type="submit" value="LISTO :D" class="Boton Boton1">
+				</form>
+			</article>
+		</section>
+	</div>
+	{% endblock %}
+</body>
+</html>
